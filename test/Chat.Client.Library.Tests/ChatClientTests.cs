@@ -47,6 +47,7 @@ namespace Chat.Client.Library.Tests
         [Theory]
         [InlineData(true, "Usuario1", "P2ssw0rd!")]
         [InlineData(false, "Usuario2", "")]
+        [InlineData(false,"Javi","secret")]
         public async Task LoginAsync_ShouldBeExpectedResult(bool expected, string username, string password)
         {
             //Arrange
